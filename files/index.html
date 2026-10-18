@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a0c16">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+<title>PlayHub: free browser games</title>
+<meta name="description" content="A free hub for browser games. Search by category, save favorites and jump straight to each game on its original site.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PlayHub">
+<meta property="og:title" content="PlayHub: free browser games">
+<meta property="og:description" content="A free hub for browser games. Search by category, save favorites and jump straight to each game on its original site.">
+<meta property="og:image" content="https://YOUR-SITE.pages.dev/og.png">
+</head>
+<body>
+<main class="wrap">
+<section class="hero">
+<h1>Free browser games, straight from the source</h1>
+<p>Search a hand-picked list. Every card opens the game on its original site and credits it.</p>
+<form class="sf" action="games.html" role="search"><input type="search" name="q" placeholder="Search games" aria-label="Search games"><button class="btn">Search</button></form>
+</section>
+<section id="rec" hidden><h2>Recently played</h2><div class="grid" id="recGrid"></div></section>
+<section><h2>Games</h2><div class="grid" data-feat="games"></div><p><a href="games.html">Browse all games</a></p></section>
+</main>
+</body>
+</html>
