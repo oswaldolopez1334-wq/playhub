@@ -56,7 +56,7 @@ function play(key) {
   }
   if (!$('#pl')) {
     document.body.insertAdjacentHTML('beforeend',
-      '<dialog id="pl" aria-label="Player"><div class="plh"><strong id="plt"></strong><button class="btn" id="plf">Fullscreen</button><button class="btn" id="plx">Close</button></div><div class="plb" id="plb"></div></dialog>');
+      '<dialog id="pl" aria-label="Player"><div class="plh"><strong id="plt"></strong><button class="btn" id="plf">Fullscreen</button><a class="btn" id="plo" target="_blank" rel="noopener noreferrer">Original ↗</a><button class="btn" id="plx">Close</button></div><div class="plb" id="plb"></div></dialog>');
     const d = $('#pl');
     $('#plx').onclick = () => d.close();
     d.onclose = () => { $('#plb').innerHTML = ''; d.classList.remove('max'); };   // unloads the game
@@ -66,7 +66,8 @@ function play(key) {
     };
   }
   const src = kind === 'games' ? it.embed : 'https://www.youtube-nocookie.com/embed/' + it.youtube + '?rel=0';
-  $('#plt').textContent = it.title + ' (' + it.source + ')';
+  $('#plt').textContent = it.title + ' – ' + it.source;
+  $('#plo').href = /^https?:\/\//.test(it.sourceUrl) ? it.sourceUrl : '#';   // fallback if an embed is blocked
   // sandbox keeps third-party games in a box; loosen it only if a game truly needs more.
   $('#plb').innerHTML = `<iframe src="${esc(src)}" title="${esc(it.title)}" allow="fullscreen; autoplay; gamepad" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-pointer-lock allow-presentation"></iframe>`;
   $('#pl').showModal();
