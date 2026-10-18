@@ -1,0 +1,6 @@
+[
+ {"id":"placeholder-nature","title":"PLACEHOLDER: Nature documentary","category":"Nature","description":"Replace with a full-length film whose YouTube video allows embedding. Put the 11-character video ID in \"youtube\".","source":"YouTube channel name","sourceUrl":"https://www.youtube.com/","youtube":"","thumb":""},
+ {"id":"placeholder-space","title":"PLACEHOLDER: Space documentary","category":"Space","description":"Leave \"youtube\" empty to show an Open link instead of an embedded player.","source":"YouTube channel name","sourceUrl":"https://www.youtube.com/","youtube":"","thumb":""},
+ {"id":"placeholder-history","title":"PLACEHOLDER: History documentary","category":"History","description":"Set sourceUrl to the video's own page and credit the channel in \"source\".","source":"YouTube channel name","sourceUrl":"https://www.youtube.com/","youtube":"","thumb":""},
+ {"id":"placeholder-science","title":"PLACEHOLDER: Science documentary","category":"Science","description":"Topics come from \"category\": use the same spelling to group films together.","source":"YouTube channel name","sourceUrl":"https://www.youtube.com/","youtube":"","thumb":""}
+]

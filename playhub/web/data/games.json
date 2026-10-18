@@ -1,0 +1,6 @@
+[
+ {"id":"placeholder-itch","title":"PLACEHOLDER: Arcade game","category":"Arcade","description":"Replace with a game whose itch.io page offers an Embed option. Paste its iframe src into \"embed\".","source":"itch.io","sourceUrl":"https://itch.io/","embed":"","thumb":""},
+ {"id":"placeholder-gamepix","title":"PLACEHOLDER: Puzzle game","category":"Puzzle","description":"Replace with a game you received through the GamePix publisher program.","source":"GamePix","sourceUrl":"https://www.gamepix.com/","embed":"","thumb":""},
+ {"id":"placeholder-poki","title":"PLACEHOLDER: Racing game","category":"Racing","description":"Link-out card. Leave \"embed\" empty and set sourceUrl to the game's own page.","source":"Poki","sourceUrl":"https://poki.com/","embed":"","thumb":""},
+ {"id":"placeholder-crazy","title":"PLACEHOLDER: Action game","category":"Action","description":"Link-out card. Leave \"embed\" empty and set sourceUrl to the game's own page.","source":"CrazyGames","sourceUrl":"https://www.crazygames.com/","embed":"","thumb":""}
+]
